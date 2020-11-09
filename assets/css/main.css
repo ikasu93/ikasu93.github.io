@@ -114,7 +114,7 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-/* Type */
+	
 
 	html {
 		font-size: 16pt;
@@ -3961,7 +3961,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #f5f5f5;
+		background-color: transparent;
 		color: #909498;
 		cursor: default;
 		position: relative;
@@ -4694,4 +4694,14 @@ input, select, textarea {
 			visibility: visible;
 		}
 
+	}
+	
+	.fuss {
+	  position: absolute;
+	  left: 0;
+	  top: 20%;
+	  width: 100%;
+	  text-align: center;
+	  vertical-align: center;
+	  color: #000;
 	}

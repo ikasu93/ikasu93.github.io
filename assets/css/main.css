@@ -1805,6 +1805,7 @@ input, select, textarea {
 				flex-wrap: wrap;
 				box-sizing: border-box;
 				align-items: stretch;
+				color: black;
 			}
 
 				.row > * {
@@ -3979,7 +3980,8 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: transparent;
+		opacity: 1;
+		background-color: rgba(0,0,0,0.6); 
 		color: white;
 		cursor: default;
 		position: relative;

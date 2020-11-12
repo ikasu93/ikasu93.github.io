@@ -2068,6 +2068,179 @@ input, select, textarea {
 		border-color: #eeeeee;
 	}
 
+	/* GALLERY STYLES */
+	#gallery{
+	width: 100%;
+	min-height: 950px;
+	text-align: center;
+	}
+
+	#gallery img, #gallery:hover .thumb:hover img{
+	opacity: 1;
+	}
+
+	#gallery:hover .thumb img{
+	opacity: 0.7;
+	}
+	
+	/* THUMB STYLES */
+
+	.thumb{
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 0 -3px;
+	vertical-align: middle;
+	background: #fff;
+	overflow: hidden;
+	z-index: 0;
+	}
+
+	.thumb:hover{
+	overflow: visible;
+	z-index: 2;
+	}
+	
+	/* IMAGE LINK SYMBOL STYLES */
+
+	.img-link, .thumb .img-link{
+	display: none;
+	}
+
+	.thumb:hover .img-link{
+	display: block;
+	font-family: arial, helvetica, Segoe UI Symbol;
+	color: #fff;
+	text-shadow: 0px 0px 10px #000;
+	position: absolute;
+	font-size: 600%;
+	top: 20px;
+	left: 50px;
+	z-index: 1;
+	}
+	
+	/* FULL IMAGE STYLES */
+
+	.full{
+	display: none;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	}
+
+	.full img{
+	max-width: 100%;
+	height: auto;
+	}
+
+	.full:target{
+	display: block;
+	}
+	
+
+	/* PREV/NEXT ARROWS */
+
+	.prev, .next{
+	display: none;
+	}
+
+	.full:hover .prev, .full:hover .next{
+	display: block;
+	min-height: 100%;
+	line-height: 100%;
+	font-family: arial, helvetica, Segoe UI Symbol;
+	font-size: 90px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	text-shadow: 0px 0px 10px #000;
+	position: absolute;
+	z-index: 1;
+	}
+
+	.prev p{
+	-webkit-transform: rotate(180deg); /* For webkit browsers like Chrome, Safari and Opera */
+	-ms-transform:rotate(180deg); /* For IE */
+	transform: rotate(180deg);
+	}
+
+	.next{
+	right: 0;
+	}	
+	
+	/* FULL CAPTION */
+
+	.full .caption2{
+	width: 100%;
+	height: auto;
+	padding: 5px 0;
+	background: #000;
+	color: #fff;
+	font-size: 20px;
+	line-height: 20px;
+	}
+
+	.full .caption2 p{
+	margin: 0;
+	padding: 0;
+	}
+
+	.full .caption2 a{
+	text-decoration: none;
+	}
+	
+	/* CAPTION SYMBOLS */
+
+	.title, .medium, .date{
+	font-family: arial, helvetica, Segoe UI Symbol;
+	color: #808080;
+	font-size: 130%;
+	vertical-align: middle;
+	}
+	
+	/* EXPAND IMAGE STYLES */
+
+	.expand{
+	position: absolute;
+	z-index: 3;
+	}
+
+	.thumb:hover .expand img{
+	margin-top: -20px;
+	margin-left: -8%;
+	background: #fff;
+	border: 7px solid #fff;
+	box-shadow: -5px 10px 10px #1B1B1B;
+	}
+
+	.expand img{
+	width: 110%;
+	height: auto;
+	}
+
+	.thumb:hover .expand:hover img{
+	width: 200%;
+	margin-top: -170px;
+	margin-left: -55%;
+	transition: 1s;
+	}
+	/* MAGNIFYING GLASS SYMBOL STYLES */
+
+	.img-mag, .thumb .expand:hover .img-mag{
+	display: none;
+	}
+
+	.thumb:hover .expand .img-mag{
+	display: block;
+	font-family: arial, helvetica, Segoe UI Symbol;
+	color: #fff;
+	text-shadow: 0px 0px 10px #000;
+	position: absolute;
+	font-size: 600%;
+	top: 0;
+	left: 30%;
+	z-index: 4;
+	}
 /* Button */
 
 	input[type="submit"],
@@ -2658,11 +2831,11 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
-				margin: 2rem 0;
+				margin: 4rem 0;
 			}
 
 			.image.main {
-				margin: 2rem 0;
+				margin: 4rem 0;
 			}
 
 		}

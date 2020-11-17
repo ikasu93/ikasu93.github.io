@@ -297,10 +297,10 @@ input, select, textarea {
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 		a:link {
-			color: #0c0;
+			color: #000080;
 		}
 		a:visited {
-			color: #c00;
+			color: #e0005d;
 		}
 		
 		a:hover {

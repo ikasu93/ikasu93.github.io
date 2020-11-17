@@ -56,7 +56,7 @@ Wichtigkeit, aber auch in der Komplexität.
 <br> </br>
 Die 3D-Visualisierung des Forschungsfortschritts ist sinnvoll, damit die Software, die das autonome Auto steuert, simuliert und getestet werden, in grafischer Form getestet werden kann, bevor sie in einem realen Szenario verwendet wird. Dieses Projekt befasst sich mit der 3D-Visualisierung von selbstfahrenden Autos in Web Browsern. Die grafische Darstellung des Fahrzeugverhaltens hilft
 den Mechanismus der Steuerung besser verstehen und bietet einen visuellen Überblick darüber. Neben der Visualisierung des Autos geht es auch um
-die Frage, wie man ein Auto, das in einem Browser dargestellt wird, fernsteuert.<br><</br>
+die Frage, wie man ein Auto, das in einem Browser dargestellt wird, fernsteuert.<br></br>
 <p><b>Verfahren:</b>
 <ul>
 <li>Nach open-source .3ds-Modellen suchen und sie mit <a href="https://www.blender.org/">Blender</a> auf die erforderliche Weise verarbeiten</li> 
@@ -110,27 +110,28 @@ unsere eigene Ontologie zur Datenwissenschaft und Ethik erstellen. Mit unserer O
 <!--<p><b>Programming language:</b> jQuery, CSS, Python</p>-->
 									<ul class="actions special">
 										<li><a href="https://github.com/ikasu93/Data-Science-Bias-Guideline" class="button">GitHub Repository</a></li>
-										<li><a href="https://arxiv.org/pdf/2009.09795.pdf" class="button">arXiv paper</a></li>
+										<li><a href="https://arxiv.org/pdf/2009.09795.pdf" class="button">arXiv pdf</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2>Explorative Analysis of a Biomedical Expert Survey to Validate Machine Learning based Patent Classification (2020)</h2>
+										<h2>Explorative Analyse einer biomedizinischen Expertenbefragung zur Validierung der auf maschinellem Lernen basierenden Patentklassifikation (2020)</h2>
 									</header>
 									<a href="images/ame.PNG" class="image fit"><img src="images/ame.PNG" alt="" /></a>
-									<p>This project focuses on the data science and analysis of survey data by <a href="https://www.ame.rwth-aachen.de/go/id/nsnq/?lidx=1">AME</a> and is an important basis for an elaborated validation of their machine learning classifier of medical patents.
-									</p>
-									<p><div><details><summary><strong>Description</strong></summary>
-<div align="justify" style="margin-top: 12px;">The <a href="https://www.ame.rwth-aachen.de/go/id/nsnq/?lidx=1">AME</a> conducted a survey with multiple biomedical experts to collect altogether over 1000 ratings on patents to validate the classifier. The goal is to determine the final clear label for a patent, which has multiple ratings of experts with potential differences in expertise for a specific field of the biomedical domain. 
-The main challenge is to investigate the characteristics of the experts having impact on the ratings.
+									<p>Dieses Projekt konzentriert sich auf die Datenwissenschaft und die Analyse von Umfragedaten durch das <a href="https://www.ame.rwth-aachen.de/go/id/nsnq/?lidx=1">Institut of Applied Medical Engineering
+</a> und ist eine wichtige Grundlage für eine fundierte Validierung ihres Machine Learning-Klassifikators für medizinische Patente.</p>
+									<p><div><details><summary><strong>Beschreibung</strong></summary>
+<div align="justify" style="margin-top: 12px;">Das <a href="https://www.ame.rwth-aachen.de/go/id/nsnq/?lidx=1">Institut für Applied Medical Engineering
+</a> führte eine Umfrage mit mehreren biomedizinischen Experten durch, um insgesamt über 1000 Bewertungen von Patenten zu sammeln und den Klassifikator zu validieren. Ziel ist es, das endgültige klare Label für ein Patent zu bestimmen, das mehrere Bewertungen von Experten mit potenziell unterschiedlichen Fachkenntnissen für ein bestimmtes Gebiet des biomedizinischen Bereichs aufweist. 
+Die größte Herausforderung besteht darin, die Merkmale der Experten zu untersuchen, die Einfluss auf die Bewertungen haben.
 <br></br>
-In this project, we have aggregated the answers of different patent survey participants to find a consistent classification. The average has proven that it provides unexpectedly accurate collective judgements. In this project, the broad approach would be to find weightings from a set of participants to aggregate all opinions into one. This is achieved by evaluating factors that are important for the final result. To find the factors, we have analyzed characteristics of the participants such as self-confidence, expertise or behavioral characteristics, vary them and observe the change. To find these characteristics in our project, I have analyzed the expert survey for different factors.
+In diesem Projekt haben wir die Antworten der verschiedenen Teilnehmer an der Patentumfrage aggregiert, um eine konsistente Klassifizierung zu finden. Der Durchschnitt hat bewiesen, dass er unerwartet genaue kollektive Urteile liefert. In diesem Projekt würde der breite Ansatz darin bestehen, Gewichtungen aus einer Reihe von Teilnehmern zu finden, um alle Meinungen zu einer einzigen zusammenzufassen. Dies wird durch die Auswertung von Faktoren erreicht, die für das Endergebnis wichtig sind. Um die Faktoren zu finden, haben wir Merkmale der Teilnehmer wie Selbstvertrauen, Fachkenntnisse oder Verhaltensmerkmale analysiert, sie variiert und die Veränderung beobachtet. Um diese Merkmale in unserem Projekt zu finden, habe ich die Expertenbefragung auf verschiedene Faktoren hin analysiert.
 									<br></br>
-									<p><b>Procedure:</b><ul>
-										<li>I have analyzed the survey database with <a href="https://en.wikipedia.org/wiki/SQL_Server_Management_Studio"><i>SQL Server Management Studio</i></a>.</li>
-										<li>I have saved important SQL outputs as CSV.</li>
-										<li>The diagrams of data are plotted with <a href="https://matplotlib.org/"><i>matplotlib</i></a>. Additionally, I analyzed clusters of data with <i>Python</i>.</li>
-										<li>Finally, I have developed an accumulation weighting model with <i>Python</i> and test it against a simple averaging model.</li>
+									<p><b>Verfahren:</b><ul>
+										<li>Es wurde die Umfragedatenbank mit <a href="https://en.wikipedia.org/wiki/SQL_Server_Management_Studio"><i>SQL Server Management Studio</i> analysiert.</a></li> 
+										<li>Es wurden wichtige SQL-Ausgaben als CSV gespeichert.</li>
+										<li>Die Diagramme der Daten wurden mit <a href="https://matplotlib.org/"><i>matplotlib</i></a> gezeichnet. Zusätzlich wurden Cluster von Daten mit <i>Python</i>.</li> analysiert.
+										<li>Anschließend habe ich ein Akkumulationsgewichtungsmodell mit <i>Python</i> entwickelt und gegen ein einfaches Mittelungsmodell getestet.</li>
 									</ul>
 									</p>
 									</p></div></details></div>
@@ -142,18 +143,18 @@ In this project, we have aggregated the answers of different patent survey parti
 								</article>
 								<article>
 									<header>
-										<h2><a href="https://sites.google.com/site/softwarearchitectureinpractice/9-documenting-software-architecture/c-component-and-connector-c-c-views">C&ampC</a> Modeling and Middleware for Distributed Systems (2018)</h2>
+										<h2><a href="https://sites.google.com/site/softwarearchitectureinpractice/9-documenting-software-architecture/c-component-and-connector-c-c-views">C&ampC</a> Modellierung und Middleware für verteilte Systeme (2018)</h2>
 									</header>
 									<a href="images/component.PNG" class="image fit"><img src="images/component.PNG" alt="" /></a>
 									<p></p>
-									<p>	In a team of four students, we have built a bundle interconnected top level components of a model (let's assume we have a car model with several components which describes driving functions, etc.) into different clusters. The aim is to reduce connection and communication overhead between components by grouping affine components into different clusters which then are connected using a middleware (<a href= "https://www.ros.org/">ROS</a>). <p><div><details><summary><strong>Description</strong></summary>
+									<p>	In einem Team von vier Studierenden haben wir ein Paket aus miteinander verbundenen Komponenten der obersten Ebene eines Modells (nehmen wir an, wir haben ein Automodell mit mehreren Komponenten, das Fahrfunktionen usw. beschreibt) zu verschiedenen Clustern zusammengestellt. Ziel ist es, den Verbindungs- und Kommunikationsaufwand zwischen den Komponenten zu reduzieren, indem affine Komponenten in verschiedenen Clustern gruppiert werden, die dann über eine Middleware (<a href= "https://www.ros.org/">ROS</a>) miteinander verbunden werden.  <p><div><details><summary><strong>Beschreibung</strong></summary>
 									</p>
-									<div align="justify" style="margin-top: 12px;">First of all, we have converted the <a href= "https://en.wikipedia.org/wiki/Symbol_table">symbol table</a> of a component into an adjacency matrix. Then, we have fed the adjacency matrix into the selected clustering algorithm. The clustering algorithm we used are the following: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.SpectralClustering.html">Spectral clustering</a> and <a href="https://micans.org/mcl/">Markov clustering</a>. We generate middleware tags separating the clusters. This will build the cluster-to-ROS connections. A connection will be established if the target cluster label is different from the source cluster label thus connecting different clusters with each other. Finally, we have fed the result into existing manual clustering architecture. 
-									Using <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo simulation</a>, we then generated random costs for the cluster-to-ROS connectgions and compared these with the results of the costs from the adopted clustering algorithms.
-									The following diagram shows the Monte Carlo costs for 1000 iterations and 3 cluster formations for the autopilot model.</p>
-									<a href="images/montecarlo.png" class="image fit"><img src="images/montecarlo.png" alt="" /></a>
-									As expected, the costs were significantly more expensive than those of spectral clustering (1813).
-									<p><b>Programming language:</b> Java, <a href="http://www.monticore.de/languages/montiarc/">MontiArc (for modelling)</a></p>
+									<div align="justify" style="margin-top: 12px;">FZunächst einmal haben wir die <a href= "https://en.wikipedia.org/wiki/Symbol_table">Symboltabelle</a> einer Komponente in eine Adjazenzmatrix umgewandelt. Dann haben wir die Adjazenzmatrix in den ausgewählten Clustering-Algorithmus eingegeben. Der von uns verwendete Clustering-Algorithmus ist der folgende: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.SpectralClustering.html">Spektrales Clustering</a> und <a href="https://micans.org/mcl/">Markov-Clustering</a>. Wir generieren Middleware-Tags, die die Cluster trennen. Dadurch werden die Cluster-zu-ROS-Verbindungen aufgebaut. Eine Verbindung wird hergestellt, wenn sich die Bezeichnung des Ziel-Clusters von der Bezeichnung des Quell-Clusters unterscheidet, wodurch verschiedene Cluster miteinander verbunden werden. Schließlich haben wir das Ergebnis in die bestehende manuelle Clustering-Architektur eingespeist. 
+									Mit Hilfe einer <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo-Simulation</a> haben wir dann zufällige Kosten für die Cluster-zu-ROS-Verbindungen generiert und diese mit den Ergebnissen der Kosten aus den angenommenen Clustering-Algorithmen verglichen.
+									Das folgende Diagramm zeigt die Monte-Carlo-Kosten für 1000 Iterationen und 3 Cluster-Formationen für das Autopilot-Modell.</p>
+									<a href="images/montecarlo.png" class="image fit"><img src="images/montecarlo.png" alt=""" /></a>
+									Wie erwartet, waren die Kosten deutlich teurer als die der spektralen Clusterbildung (1813).
+									<p><b>Programmiersprache:</b> Java, <a href="http://www.monticore.de/languages/montiarc/">MontiArc (für die Modellierung) </a></p>
 									</div></details></div>
 									&nbsp;
 									
@@ -163,13 +164,13 @@ In this project, we have aggregated the answers of different patent survey parti
 								</article>
 								<article>
 										<header>
-											<h2>Hackathon by e.GO Digital (2019)</h2>
+											<h2>Hackathon von e.GO Digital (2019)</h2>
 										</header>
 										<a href="images/ego.PNG" class="image fit"><img src="images/ego.PNG" alt="" /></a>
-										<p>The target of the hackathon is the development of approaches for improving station-based carsharing. The given scenario is considered to be a landlord who offers e.Base Home, a carsharing service, to his tenants in a sub-urban neighbourhood. Although it was well received, it turned out that the service was not cost covering due to a low rate of utilization. Due to the landlord's desire to be climate-friendly, not only profitability is to be increased, but emissions are also to be reduced. Other factors to be considered are the improvement of charging behaviour of the users and the intuitive use of the interface. Moreover, an implementation of gamification is expected in order to enhance user engagement.</p>
-										<div><details><summary><strong>Procedure</strong></summary>
-<div align="justify" style="margin-top: 12px;"> We extended the existing application by two main features: repeated bookings and gamification. We developed our features using Python and for the user interface we additionally employed the framework Kivy. We set up a client-server architecture with "bottle" to simulate a realistic usage environment. The server can use the API to access the database (which includes booking and vehicle information). The other databases such as the ones containing user data and recurring booking information have been hacked together by storing python data types with pickles. The server repeatedly/regularly runs a task to check if the repeating bookings have been added to the booking database and if not, adds the missing bookings. Due to the lack of real data, we generated fictional bookings to prove the feasability of our implementation. The main.py file provides the graphical user interface functionality and uses the functions in the client.py file to communicate with the server.
-	The server.py should be started as a background process first and will listen for requests from the client. It uses functions from the control.py and api_control.py files to access the database trough the API.</div>
+										<p>Ziel des Hackathons ist die Entwicklung von Ansätzen zur Verbesserung des stationsbasierten Carsharing. Als gegebenes Szenario wird ein Vermieter betrachtet, der seinen Mietern in einem Vorstadtquartier e.Base Home, einen Carsharing-Service, anbietet. Obwohl es gut angenommen wurde, stellte sich heraus, dass der Dienst aufgrund einer geringen Nutzungsrate nicht kostendeckend war. Durch den Wunsch des Vermieters, klimafreundlich zu sein, soll nicht nur die Rentabilität erhöht, sondern auch die Emissionen reduziert werden. Weitere zu berücksichtigende Faktoren sind die Verbesserung des Abrechnungsverhaltens der Nutzer und die intuitive Bedienung der Oberfläche. Darüber hinaus wird eine Implementierung der Gamifizierung erwartet, um das Engagement der Nutzer zu erhöhen.</p>
+										<div><details><summary><strong>Prozedur</strong></summary>
+<div align="justify" style="margin-top: 12px;"> Wir haben die bestehende Anwendung um zwei Hauptmerkmale erweitert: wiederholte Buchungen und Gamifizierung. Wir entwickelten unsere Features mit Python und setzten für die Benutzerschnittstelle zusätzlich das Framework Kivy ein. Wir richteten eine Client-Server-Architektur mit "bottle" ein, um eine realistische Nutzungsumgebung zu simulieren. Der Server kann über die API auf die Datenbank zugreifen (die Buchungs- und Fahrzeuginformationen enthält). Die anderen Datenbanken, wie diejenigen, die Benutzerdaten und wiederkehrende Buchungsinformationen enthalten, wurden durch Speicherung von Python-Datentypen mit Pickles zusammengehackt. Der Server führt wiederholt/regelmäßig eine Aufgabe aus, um zu überprüfen, ob die sich wiederholenden Buchungen in die Buchungsdatenbank aufgenommen wurden, und falls nicht, fügt er die fehlenden Buchungen hinzu. Aufgrund des Mangels an echten Daten generierten wir fiktive Buchungen, um die Durchführbarkeit unserer Implementierung zu beweisen. Die Datei main.py stellt die Funktionalität der grafischen Benutzeroberfläche zur Verfügung und verwendet die Funktionen in der Datei client.py zur Kommunikation mit dem Server.
+	Die Datei server.py sollte zunächst als Hintergrundprozess gestartet werden und lauscht auf Anfragen vom Client. Sie verwendet Funktionen aus den Dateien control.py und api_control.py, um über die API auf die Datenbank zuzugreifen.</div>
 </details></div>
 &nbsp;
 										<ul class="actions special">

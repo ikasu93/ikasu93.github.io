@@ -329,8 +329,12 @@ input, select, textarea {
 	hr {
 		border-bottom-color: #eeeeee;
 	}
-
-/* Row */
+	/*
+	.dark-mode {
+	  background-color: black;
+	  color: white;
+	*/
+	/* Row */
 
 	.row {
 		display: flex;

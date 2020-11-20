@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/icon.png">
 	</head>
 	<body class="is-preload">
 
@@ -585,6 +586,195 @@
 										<li>Mitigationsstrategien implementieren</li>
 										<li>Dokumente updaten</li>
 										<li>Zu Stakeholdern kommunizieren</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								
+								<!--SLE-->
+								<h2>Software Language Engineering</h2>
+								<p><div><details><summary><strong>Was ist MontiCore?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Language Workbench (LWB)</li>
+										<li>DSL Tool(Generator welches das Produkt generiert) und generiert DSL-Tools (e.g. DEx, MontiArc, UML/P)</li>
+										<li>Ermöglicht Codegenerierung, Testsgenerierung, Fehlererkennung, Transformationen</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Wie ist die MontiCore Workflow?(10)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ol>
+										<li>Defaults initialisieren, Parameter bearbeiten</li>
+										<li>Grammatik laden und parsen</li>
+										<li>Symbol Table aus Non-terminals ableiten</li>
+										<li>Context Conditions überprüfen</li>
+										<li>Grammatik-AST als Input übersetzen für ANTLR</li>
+										<li>Parser generieren mit ANTLR</li>
+										<li>Grammatik-AST zu CD-AST übersetzen</li>
+										<li>CD-AST mit Methoden dekorieren</li>
+										<li>AST-Klassen generieren mit FreeMarker</li>
+										<li>Reporting laufen</li>
+									</ol>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was sind CoCo's?(4)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Context Conditions</li>
+										<li>Prädikat auf einem kontextfreien grammatikalisch korrekten Satz</li>
+										<li>wo der Kontext verwendet wird, um die Richtigkeit zu bestimmen</li>
+										<li>Warum: Kontextfreie Grammatik kann nicht alle Constraints beschreiben</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist ein Compiler?(4)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<span><img src="images/spk_img/compiler.png" width="800" style="margin-top: 12px;"></span>
+									<ul>
+										<li>Liest Programm in Quellcode</li>
+										<li>Überprüft Korrektheit</li>
+										<li>Generiert Code in der Zielsprache</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist ein Scanner?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Zerlegt Quellcode in  Tokens/symbols</li>
+										<li>Filtert unnötige Teile (Whitespaces, Kommentare)</li>
+										<li>Sammelt Informationen für Fehler Report(z.B. Zeilennummer)</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist ein Parser?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Überprüft Korrektheit der Eingabe (bezüglich der Grammatik)</li>
+										<li>Meldet verständliche Fehlermeldungen</li>
+										<li>Produziert die AST</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist Parsing?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Kontextfreie Grammatik (Nonterminal, Terminals, Produktion, Startsymbol</li>
+										<li>Beschreibt die Sprache</li>
+										<li>Rekursiver Abstieg (Top down, left to right)</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist ein AST?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Abstract Syntax Tree</li>
+										<li>Enthält nur relevante Information</li>
+										<li>Visitor Pattern um die Knoten durchzutraversieren</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist eine LWB?(2)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Language Workbench</li>
+										<li>Besteht aus einem Generator, generiert Teile des Tools(z.B. Parser)</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist ANTLR?(5)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Tool um Parser zu generieren</li>
+										<li>Benutzt Rekursiven Abstieg</li>
+										<li>Hoch erweiterbar, z.B. Java zur AST Creation</li>
+										<li>Input: Grammatik</li>
+										<li>Output: ausführbaren Parser für die Sprache</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist ein Symbol?(1)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>enthält alle wesentlichen Informationen über eine benannte Modelleinheit</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist eine Symbol Table?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Datenstruktur, die Namen auf ihre Symbole abbildet, die alle wesentlichen Informationen zur Verwendung des Symbols enthalten</li>
+										<li>Ermöglicht es, Deklarationen, Typen und Implementierungsdetails, die mit benannten Modelleinheiten verbunden sind, effizient zu organisieren und zu finden</li>
+										<li>Schnelle Navigation anhand von Symbolnamen</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Language Design(8)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ol>
+										<li>Prüfe, ob eine vorhandene Modellierungssprache wiederverwenden kann, wenn nicht, fahre wie folgt fort:</li>
+										<li>Schreibe mehrere Beispiele auf, die die wesentlichen Informationen erfassen, die mit den DSL-Modellen vermitteln möchte.</li>
+										<li>Identifizierung der Konzepte und der Struktur der DSL</li>
+										<li>Stelle Fragen zu Grenz- und pathologischen Fällen, zu möglichen anderen Anwendungsformen, die von den Benutzern gewünscht werden könnten, usw.</li>
+										<li>Genaue Definition der abstrakten Syntax der DSL</li>
+										<li>Erweitern der abstrakten Syntaxdefinition um konkrete syntaktische Zucker</li>
+										<li>Ableiten einer Datenstruktur, die die abstrakte Syntax darstellt</li>
+										<li>Einen Parser ableiten, um ein Modell der Quellsprache in die abstrakte Syntax zu übertragen</li>
+									</ol>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Design Guideline - Zweck der Sprache(4)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Was ist das Ziel der DSL, wofür soll sie verwendet werden?</li>
+										<li>Frühzeitige Identifizierung von Sprachgebrauch</li>
+										<li>Fragen stellen</li>
+										<li>Sprache konsistent machen</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Design Guideline - Realisierung der Sprache(4)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Auf welcher Grundlage sollte die SDL realisiert werden?</li>
+										<li>Bestehende Sprachen zusammensetzen, wann immer dies möglich ist</li>
+										<li>Zumindest bestehende Sprachdefinitionen wiederverwenden</li>
+										<li>Wiederverwendung bestehender Type Systems</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Design Guideline - Sprachinhalt(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Welche Elemente sollten in der DSL enthalten sein?</li>
+										<li>Nur erforderliche Domäne reflektieren</li>
+										<li>Keep It Simple</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Design Guideline - Konkrete Syntax(4)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Wie sollte die DSL nach außen vertreten werden?</li>
+										<li>Sprachelemente zur schnellen/leichten Unterscheidung</li>
+										<li>Kommentare zulassen</li>
+										<li>Bereitstellung von Organisationsstrukturen</li>
 									</ul>
 									</div>
 									</details></div>

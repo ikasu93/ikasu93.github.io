@@ -66,6 +66,7 @@
 									<div align="left" style="margin-top: 12px;">
 									<ul>
 										<li>Sorgt innerhalb des Projekts für klar verständliche Domain Konzepte und erhöht die Entwicklungsgeschwindigkeit.</li>
+										<li>"Ein Bild sagt mehr als 1000 Worte" - Inhalte können so besser visualisiert und erfasst werden</li>
 										<li>Man implementiert, testet und modelliert mit der UML zur gleichen Zeit.</li>
 										<li>Testfälle können rascher und gründlicher erstellt werden.</li>
 									</ul>
@@ -407,9 +408,12 @@
 									<ul>
 										<li>Rational Unified Process</li>
 										<li>Forciert iterative und inkrementelle Softwareentwicklung</li>
+										<li>Ist detaillierter bezüglich verwendung von Tools -> "benutze genau dieses Tool für genau das"</li>
 										<li>Basiert auf Use Cases und Prototyping</li>
 										<li>Objektorientiert (UML wann immer möglich)</li>
-										<li>Phasen: <b>Inception, Elaboration, Construction, Transition</b></li>
+										<li>Phasen(Zeitachse): <b>Inception, Elaboration, Construction, Transition</b></li>
+										<li>Aktivitäten(y-Achse): <b>Business Modeling, Requirements, Analysis &amp Design, Implementation, Test, Deployment, etc.</b></li>
+										
 									</ul>
 									</div>
 									</details></div>
@@ -644,7 +648,7 @@
 								</p>
 								<p><div><details><summary><strong>Was ist ein Compiler?(4)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
-									<span><img src="images/spk_img/compiler.PNG" width="800" style="margin-top: 12px;"></span>
+									<span><img src="images/spk_img/compiler2.PNG" width="800" style="margin-top: 12px;"></span>
 									<ul>
 										<li>Liest Programm in Quellcode</li>
 										<li>Überprüft Korrektheit</li>
@@ -693,6 +697,26 @@
 									</div>
 									</details></div>
 								</p>
+								<p><div><details><summary><strong>Wie werden AST-Knoten konstruiert - welche Patterns?(2)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>mit dem Builder Pattern</li>
+										<li>Mill Pattern (Mühle) um Builder abzurufen</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								
+								<p><div><details><summary><strong>Welche Literals sind wichtig?(2)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>StringLiteral = name:String;</li>
+										<li>BooleanLiteral, CharLiteral, NatLiteral(natürliche Zahl)</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								
 								<p><div><details><summary><strong>Was ist eine LWB?(2)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ul>
@@ -702,6 +726,20 @@
 									</div>
 									</details></div>
 								</p>
+								
+								<p><div><details><summary><strong>Was ist eine RTE?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Runtime Environment</li>
+										<li>Aus der Grammatik werden viele AST-Klassen generiert</li>
+										<li>Sammlung aus vordefinierten Klassen, welche gemeinsam mit dem generierten Code eine Funktion erfüllt.</li>
+										
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								
+								
 								<p><div><details><summary><strong>Was ist ANTLR?(5)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ul>
@@ -806,6 +844,28 @@
 										<li>Sprachelemente zur schnellen/leichten Unterscheidung</li>
 										<li>Kommentare zulassen</li>
 										<li>Bereitstellung von Organisationsstrukturen</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Transformation(4)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>[[LHS :- RHS]]</li>
+										<li>z.B. Löschen [[LHS :- ]]</li>
+										<li>z.B. Ersetzen [[LHS :- RHS]]</li>
+										<li>z.B. initialisieren [[ :- RHS]]</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								
+								<p><div><details><summary><strong>Wann transformation wir?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Refactoring</li>
+										<li>Reverse Engineering</li>
+										<li>Code generation</li>
 									</ul>
 									</div>
 									</details></div>

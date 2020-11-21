@@ -603,20 +603,31 @@
 									</div>
 									</details></div>
 								</p>
-								<p><div><details><summary><strong>Wie ist die MontiCore Workflow?(10)</strong></summary>
+								<p><div><details><summary><strong>Wie ist die MontiCore Workflow?(11)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ol>
+										<li>Workflow Execution per Groovy Script ("mach mal das in der Reihenfolge") macht folgende Schritte:</li>
 										<li>Defaults initialisieren, Parameter bearbeiten</li>
 										<li>Grammatik laden und parsen</li>
 										<li>Symbol Table aus Non-terminals ableiten</li>
 										<li>Context Conditions überprüfen</li>
 										<li>Grammatik-AST als Input übersetzen für ANTLR</li>
 										<li>Parser generieren mit ANTLR</li>
-										<li>Grammatik-AST zu CD-AST übersetzen</li>
-										<li>CD-AST mit Methoden dekorieren</li>
+										<li>Grammatik-AST zu CD-AST übersetzen (Strukturebene)</li>
+										<li>CD-AST mit Methoden dekorieren (mit Methodenrümpfen als Templates)</li>
 										<li>AST-Klassen generieren mit FreeMarker</li>
 										<li>Reporting laufen</li>
 									</ol>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist Pretty Printer?(4)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Transformation Model2Text (mit Transformation Engine)</li>
+										<li>Geht nur, wenn die Struktur vom AST ähnlich zu dem Output(Java) ist</li>
+										<li>Fügt Syntactic Sugar wieder hinzu, welches weggeparsed wurde</li>
+									</ul>
 									</div>
 									</details></div>
 								</p>
@@ -697,16 +708,26 @@
 										<li>Tool um Parser zu generieren</li>
 										<li>Benutzt Rekursiven Abstieg</li>
 										<li>Hoch erweiterbar, z.B. Java zur AST Creation</li>
-										<li>Input: Grammatik</li>
-										<li>Output: ausführbaren Parser für die Sprache</li>
+										<li>Input: MontiCore Grammatik</li>
+										<li>Output: ausführbaren Parser für die Sprache bzw. liefert die Java Klassen</li>
 									</ul>
 									</div>
 									</details></div>
 								</p>
-								<p><div><details><summary><strong>Was ist ein Symbol?(1)</strong></summary>
+								<p><div><details><summary><strong>Was ist ein Symbol?(2)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ul>
-										<li>enthält alle wesentlichen Informationen über eine benannte Modelleinheit</li>
+										<li>Enthält alle wesentlichen Informationen über eine benannte Modelleinheit</li>
+										<li>Alle Art von Namen z.B. Klassennamen, Attributnamen</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist ein Symbol Kind?(1)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Definiert die essentielle Information, z.B. Variableattribute</li>
+										<li></li>
 									</ul>
 									</div>
 									</details></div>
@@ -717,6 +738,16 @@
 										<li>Datenstruktur, die Namen auf ihre Symbole abbildet, die alle wesentlichen Informationen zur Verwendung des Symbols enthalten</li>
 										<li>Ermöglicht es, Deklarationen, Typen und Implementierungsdetails, die mit benannten Modelleinheiten verbunden sind, effizient zu organisieren und zu finden</li>
 										<li>Schnelle Navigation anhand von Symbolnamen</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist eine DSL?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Domain Specific Language</li>
+										<li>mit Blick auf eine bestimmte Domäne konstruiert, z.B. HTML für Webseiten</li>
+										<li>Besteht in einer gewünschten konkreten und abstrakten Syntax</li>
 									</ul>
 									</div>
 									</details></div>
@@ -776,6 +807,57 @@
 										<li>Kommentare zulassen</li>
 										<li>Bereitstellung von Organisationsstrukturen</li>
 									</ul>
+									</div>
+									</details></div>
+								</p>
+								<h1>Aufgaben</h1>
+								<p><div><details><summary><strong>Abstract Syntax Tree</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									Gegeben sei ((4 > 17) || (call(25) + 3 != 7)) &amp&amp !(a || false). Zeichne die Baumstruktur der AST Knoten auf, welches erstellt wurde falls der Ausdruck von einer leeren Grammatik, welches CommonExpressions und MCCommonLiterals erweitert, geparsed wurde. 
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Grammar</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									Develop an grammar out of the following code:<br></br>
+									Appointment "Konferenz" {
+									<ul style="list-style-type:none">
+									<li>start: 01/10/19 8:15</li>
+									<li>end: 02/10/19 16:15</li>
+									<li>participants : "Peter Stein", "Paula Schmidt", "Tina Berg (personal)"</li>
+									<li>weekly</li>
+									</ul>
+									}
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>FreeMarker</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									coming soon
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Klassendiagramm</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									coming soon
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Sequenzdiagramm</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									coming soon
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>State Chart</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									coming soon
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>OCL</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									coming soon
 									</div>
 									</details></div>
 								</p>

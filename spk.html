@@ -174,6 +174,14 @@
 										<li><b>Entry-Aktionen</b> analog den ankommenden Transitionen hinzufügen</li>
 										<li><b>Zustandsinvarianten</b> von Superzuständen in alle Subzustände aufnehmen</li>
 										<li>Hierarchisch zergliederte Zustände <b>entfernen</b></li>
+										<li>Zustandsinvarianten verschärfen</li>
+										<li>Zustandsinvarianten in die Vorbedingungen integrieren</li>
+										<li>Zustandsinvarianten mit Aktionsbedingungen konjugieren</li>
+										<li>Zustandsinvarianten entfernen</li>
+										<li>Statechart vervollständigen</li>
+										<li>Nichtdeterminismus der Transitionen reduzieren</li>
+										<li>Transitionen ohne Schaltbereitschaft elimineren</li>
+										<li>Nicht erreichbare Zustände eliminieren</li>
 									</ol>
 									</div>
 									</details></div>
@@ -638,12 +646,26 @@
 									<div align="left" style="margin-top: 12px;">
 									<ul>
 										<li>Transformation Model2Text (mit Transformation Engine)</li>
+										<li>bei der ein Modell in einen richtig formatierten Text umgewandelt wird</li>
 										<li>Geht nur, wenn die Struktur vom AST ähnlich zu dem Output(Java) ist</li>
 										<li>Fügt Syntactic Sugar wieder hinzu, welches weggeparsed wurde</li>
 									</ul>
 									</div>
 									</details></div>
 								</p>
+								
+								<p><div><details><summary><strong>Welche Formen von Modelltransformationen gibt es?</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Eine Transformationsregel ist eine Beschreibung, wie einige Konstrukte in der Ausgangssprache in Konstrukte in der Zielsprache transformiert werden können.</li>
+										<li>Text-To-Model (T2M) z.B. Parsing</li>
+										<li>Model-To-Model (M2M) z.B. Grammatik AST zu CD4A AST</li>
+										<li>Model-To-Text (M2T) z.B. Templates oder Pretty printing, API-basiertes Generieren von AST</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								
 								<p><div><details><summary><strong>Was sind CoCo's?(4)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ul>

@@ -62,13 +62,13 @@
 									</div>
 									</details></div>
 								</p>
-								<p><div><details><summary><strong>Was sind Vorteile der modellbasierten Softwareentwicklung?(4)</strong></summary>
+								<p><div><details><summary><strong>Was sind Vorteile der modellbasierten Softwareentwicklung?(3)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ul>
-										<li>Sorgt innerhalb des Projekts für klar verständliche Domain Konzepte und erhöht die Entwicklungsgeschwindigkeit.</li>
-										<li>"Ein Bild sagt mehr als 1000 Worte" - Inhalte können so besser visualisiert und erfasst werden</li>
+										<li>Inhalte können so besser visualisiert und erfasst werden</li>
 										<li>Man implementiert, testet und modelliert mit der UML zur gleichen Zeit.</li>
 										<li>Testfälle und Code können rascher und gründlicher erstellt werden.</li>
+										<li></li>
 									</ul>
 									</div>
 									</details></div>
@@ -617,7 +617,7 @@
 								<p><div><details><summary><strong>Was ist MontiCore?(3)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ul>
-										<li>Language Workbench (LWB)</li>
+										<li>Language Workbench (LWB) - Entwicklungstool, um Programmiersprachen zu definieren</li>
 										<li>DSL Tool(Generator welches das Produkt generiert) und generiert DSL-Tools (e.g. DEx, MontiArc, UML/P)</li>
 										<li>Ermöglicht Codegenerierung, Testsgenerierung, Fehlererkennung, Transformationen</li>
 									</ul>
@@ -723,7 +723,7 @@
 									<ul>
 										<li>Abstract Syntax Tree</li>
 										<li>Enthält nur relevante Information</li>
-										<li>Visitor Pattern um die Knoten durchzutraversieren</li>
+										<li>Visitor Pattern um die Knoten durchzutraversieren: handle(state), visit(state), traverse(state), accept(counter), handle(nextState), visit(nextState), traverse(nextState), endVisit(endState)</li>
 									</ul>
 									</div>
 									</details></div>
@@ -777,7 +777,7 @@
 										<li>Tool um Parser zu generieren</li>
 										<li>Benutzt Rekursiven Abstieg</li>
 										<li>Hoch erweiterbar, z.B. Java zur AST Creation</li>
-										<li>Input: MontiCore Grammatik</li>
+										<li>Input: MontiCore Grammatik wird in ANTLR Grammatik übersetzt</li>
 										<li>Output: ausführbaren Parser für die Sprache bzw. liefert die Java Klassen</li>
 									</ul>
 									</div>
@@ -795,7 +795,7 @@
 								<p><div><details><summary><strong>Was ist ein Symbol Kind?(1)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ul>
-										<li>Definiert die essentielle Information, z.B. Variableattribute</li>
+										<li>Definiert die essentielle Information, z.B. Variableattribut, Klassenattribut</li>
 										<li></li>
 									</ul>
 									</div>
@@ -807,6 +807,25 @@
 										<li>Datenstruktur, die Namen auf ihre Symbole abbildet, die alle wesentlichen Informationen zur Verwendung des Symbols enthalten</li>
 										<li>Ermöglicht es, Deklarationen, Typen und Implementierungsdetails, die mit benannten Modelleinheiten verbunden sind, effizient zu organisieren und zu finden</li>
 										<li>Schnelle Navigation anhand von Symbolnamen</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Was ist eine Scope?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Beinhaltet eine Sammlung von Symbols und sagt welche der Symbole sichtbar ist.</li>
+										<li>Ermöglicht es, Deklarationen, Typen und Implementierungsdetails, die mit benannten Modelleinheiten verbunden sind, effizient zu organisieren und zu finden</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Warum kann eine andere Klasse auf ein Public Attribut zugreifen?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Public attributes werden exportiert.</li>
+										<li>Wir fangen im aktuellen scope an  z.B. method scope, wenn es nicht gefunden wird in den class scope, und dann in den artifact scope.</li>
+										<li>Letzlich in den Global Scope.</li>
 									</ul>
 									</div>
 									</details></div>
@@ -901,6 +920,25 @@
 									</div>
 									</details></div>
 								</p>
+								<p><div><details><summary><strong>Welche Pattern gibt es zur Integration von handgeschriebenem Code?(1)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Generation Gap Pattern</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Wie heißt denn das Pattern auf dem MontiCore arbeitet und wie funktioniert er?</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Top Pattern/Mechanismus</li>
+										<li>Ziel: Funktionalität von generierten Klassen zu erweitern</li>
+										<li>Generierte Klassen beinhalten keine Business Logic und muss deswegen per handgeschiebenem Code aufgebessert werden</li>
+										<li>Das Top Pattern besagt, dass der Generator, wenn er sieht, dass eine Klasse mit handgeschriebenem Code schon gibt, statt diese Klasse noch ein mal zu generieren und dabei dei vorhandene Datei zu überschreiben, eine TOP Variante der Klasse generiert, welche dann mittels Innheritance von der schon vorhandenen Klasse um Business Logic erweitert werden kann.</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
 								<h1>Aufgaben</h1>
 								<p><div><details><summary><strong>Abstract Syntax Tree</strong></summary>
 									<div align="left" style="margin-top: 12px;">
@@ -922,6 +960,8 @@
 									</div>
 									</details></div>
 								</p>
+								
+								
 								<p><div><details><summary><strong>FreeMarker</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									coming soon

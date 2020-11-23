@@ -567,6 +567,74 @@
 									</div>
 									</details></div>
 								</p>
+								<p><div><details><summary><strong>Wie ist der DoC(Effort Spent)?</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>actualEffort/plannedEffort</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Wie ist der DoC(Estimate To Complete)? - Forecast</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>actualEffort/forecastFinalEffort</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Wie ist der EarnedValue?</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>plannedEffort-estimateToComplete</li>
+										<li>DoC(Earned Value)=earnedValue/plannedEffort</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Wie ist der DoC (overall Project Progress)?</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>DoC=completedWP/totalWP</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Wie ist der Earned Value?</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>EV = DegreeOfCompletion*(Budget at complete)</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Wie ist die Kosten-/Schedulevarianz?</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>CV=EV-ActualCost</li>
+										<li>SV=EV-PlannedCosts</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Wie ist der Schedule-/Cost Performance Index?</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>SPI=EV/PlannedCosts > 1 less cost to perform</li>
+										<li>CPI=EV/ActualCost > 1 ahead of schedule</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Wie ist der To Complete Performance Index?</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>TCPI=(BAC-EV)/(BAC-AC)</li>
+										<li>TCPI=remaining_work/remaining_budget</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
 								<p><div><details><summary><strong>Was ist Risk Management?(2)</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ul>
@@ -614,7 +682,25 @@
 									</div>
 									</details></div>
 								</p>
-								
+								<p><div><details><summary><strong>Welche Stakeholder Analysis Verfahren gibt es?(1)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Power Matrix (Power zu Interesse)</li>
+										<li>Socio-Diagram (Stakeholder identifizieren, Rollen identifizieren, und Beziehungen zueinander)</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
+								<p><div><details><summary><strong>Welche Decision Analysis Verfahren gibt es?(3)</strong></summary>
+									<div align="left" style="margin-top: 12px;">
+									<ul>
+										<li>Pareto Analysis(wir reduzieren zu viele Alternativen - zu wichtigsten Kriterium alle Alternativen evaluieren)</li>
+										<li>Paired Comparison Analysis (Vergleich aller Alternativen)</li>
+										<li>Grid Analysis (Vergleich mit Gewichten und Kriterien zu Alternativen)</li>
+									</ul>
+									</div>
+									</details></div>
+								</p>
 								<!--SLE-->
 								<h2>Software Language Engineering</h2>
 								<p><div><details><summary><strong>Was ist MontiCore?(3)</strong></summary>
@@ -945,10 +1031,10 @@
 								<p><div><details><summary><strong>Was ist ein Hook Point?</strong></summary>
 									<div align="left" style="margin-top: 12px;">
 									<ul>
-										<li>Ein hook point ist eine stelle in einem template für adaption</li>
-										<li>nützlich wenn du weißt, dass man an einer Stelle etwas Interessantes einfügen könnte, man aber bei der Definition noch nicht weiß was</li>
-										<li>Erhöht Reusability</li>
-										<li>Der Hauptunterschied ist halt, dass bei include die Beziehung hardcoded ist und bei einem Hook Point dynamisch „gelinkt“ wird</li>
+										<li>Ein Hook Point ist eine Stelle in einem Template für Adaption</li>
+										<li>Nützlich wenn du weißt, dass man an einer Stelle etwas Interessantes einfügen könnte, man aber bei der Definition noch nicht weiß was</li>
+										<li>Erhöht die Reusability</li>
+										<li>Der Hauptunterschied ist, dass bei include die Beziehung hardcoded ist und bei einem Hook Point dynamisch „gelinkt“ wird</li>
 									</ul>										
 									</div>
 									</details></div>

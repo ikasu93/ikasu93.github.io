@@ -225,10 +225,20 @@ input, select, textarea {
 	  box-sizing: border-box;
 	}
 
-  .timeline::after {
-    left: 31px;
-  }
-
+	.timeline::after {
+	  content: '';
+	  position: absolute;
+	  width: 6px;
+	  background-color: navy;
+	  top: 0;
+	  bottom: 0;
+	  left: 56px;
+	  margin-left: -3px;
+	  opacity: 0.9;
+	  background: repeating-linear-gradient(
+		40deg, #743ad5, #d53a9d
+		);
+	}
 /* Full-width containers */
   .container {
     width: 100%;

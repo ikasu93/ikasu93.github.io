@@ -47,7 +47,7 @@
 						<tbody>
 						  <tr>
 							<td><a href="#3D17">3D Visualization for Self-Driving Cars</a></td>
-							<td>Java, JavaScript, HTML, <a href="http://www.monticore.de/languages/montiarc/">MontiArc</a></td>
+							<td>Java, JavaScript, HTML, <a href="https://www.se-rwth.de/topics/Software-Architecture.php">MontiArc</a></td>
 							<td><a href="https://github.com/ikasu93/Driving-Visualization" class="icon brands fa-github"><span class="label">Click here</span></a></td>
 						  </tr>
 						  <tr>
@@ -62,14 +62,14 @@
 						  </tr>
 						  <tr>
 							<td><a href="ROS18">C&C Modeling and Middeware for Distributed Systems</a></td>
-							<td>Java, <a href="http://www.monticore.de/languages/montiarc/">MontiArc</a></td>
+							<td>Java, <a href="https://www.se-rwth.de/topics/Software-Architecture.php">MontiArc</a></td>
 							<td></td>
 						  </tr>
-						  <tr>
+						  <!--<tr>
 							<td><a href="#ego">Hackathon by e.GO Digital</a></td>
 							<td>Python</td>
 							<td><a href="https://github.com/nqthong11/Banh-Mi" class="icon brands fa-github"><span class="label">GitHub</span></a></td>
-						  </tr>
+						  </tr>-->
 						  <!--<tr>
 							<td>Random Machine Learning Projects</td>
 							<td>Python</td>
@@ -84,7 +84,7 @@
 										<h2 id="3D17">3D Visualization API for Self-Driving Cars (2017)</h2>
 									</header>
 									<a href="images/threejs.png" class="image fit"><img src="images/threejs.png" alt="" /></a>
-									<p>In my bachelor thesis I developed a 3D visualization of a car model and a simple world for browser applications. Furthermore, a <a href= "http://www.monticore.de/languages/montiarc/">MontiArc</a> controller for autonomous driving was designed and an API between the visualization, the controller and the server was implemented with Java.</p>
+									<p>In my bachelor thesis I developed a 3D visualization of a car model and a simple world for browser applications. Furthermore, a <a href= "https://www.se-rwth.de/topics/Software-Architecture.php">MontiArc</a> controller for autonomous driving was designed and an API between the visualization, the controller and the server was implemented with Java.</p>
 									<p><div><details><summary><strong>Abstract</strong></summary>
 <div align="justify" style="margin-top: 12px;">In the current, self-driving cars are a huge topic especially because
 quality and safety are important factors for humanity. The mortality caused by traffic accidents due to human errors is relatively high.
@@ -102,7 +102,7 @@ the question on how to remotely control a car rendered in a browser.<br></br>
 <li>Searching for open-source .3ds models and processing them to a desired way with <a href="https://www.blender.org/">Blender</a></li>
 <li>Creating a 3D environment with <a href="https://threejs.org/" >Three.js</a></li>
 <li>Implementation of simulation with Java</li>
-<li>Implementation of controller logic with <a href="http://www.monticore.de/languages/montiarc/">MontiArc</a></li>
+<li>Implementation of controller logic with <a href="https://www.se-rwth.de/topics/Software-Architecture.php">MontiArc</a></li>
 </ul>
 <a href="images/logic.PNG" class="image fit"><img src="images/logic.PNG" alt="" /></a>
 </p>
@@ -114,7 +114,7 @@ the question on how to remotely control a car rendered in a browser.<br></br>
 <iframe width=100% height=100% src="https://www.youtube.com/embed/tByHiV9v9Yk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-<!--<p><b>Programming language:</b> Java, JavaScript, <a href="http://www.monticore.de/languages/montiarc/">MontiArc</a></p>-->
+<!--<p><b>Programming language:</b> Java, JavaScript, <a href="https://www.se-rwth.de/topics/Software-Architecture.php">MontiArc</a></p>-->
 <ul class="actions special">
 	<li><a href="https://github.com/ikasu93/Driving-Visualization" class="button">GitHub repository</a></li>
 </u>
@@ -221,11 +221,11 @@ In this project, we have aggregated the answers of different patent survey parti
 									<p>	In a team of four students, we have built a bundle interconnected top level components of a model (let's assume we have a car model with several components which describes driving functions, etc.) into different clusters. The aim is to reduce connection and communication overhead between components by grouping affine components into different clusters which then are connected using a middleware (<a href= "https://www.ros.org/">ROS</a>). <p><div><details><summary><strong>Description</strong></summary>
 									</p>
 									<div align="justify" style="margin-top: 12px;">First of all, we have converted the <a href= "https://en.wikipedia.org/wiki/Symbol_table">symbol table</a> of a component into an adjacency matrix. Then, we have fed the adjacency matrix into the selected clustering algorithm. The clustering algorithm we used are the following: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.SpectralClustering.html">Spectral clustering</a> and <a href="https://micans.org/mcl/">Markov clustering</a>. We generate middleware tags separating the clusters. This will build the cluster-to-ROS connections. A connection will be established if the target cluster label is different from the source cluster label thus connecting different clusters with each other. Finally, we have fed the result into existing manual clustering architecture.
-									Using <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo simulation</a>, we then generated random costs for the cluster-to-ROS connectgions and compared these with the results of the costs from the adopted clustering algorithms.
+									Using <a href="https://en.wikipedia.org/wiki/Monte_Carlo_method">Monte Carlo simulation</a>, we then generated random costs for the cluster-to-ROS connections and compared these with the results of the costs from the adopted clustering algorithms.
 									The following diagram shows the Monte Carlo costs for 1000 iterations and 3 cluster formations for the autopilot model.</p>
 									<a href="images/montecarlo.png" class="image fit"><img src="images/montecarlo.png" alt="" /></a>
 									As expected, the costs were significantly more expensive than those of spectral clustering (1813).
-									<p><b>Programming language:</b> Java, <a href="http://www.monticore.de/languages/montiarc/">MontiArc (for modelling)</a></p>
+									<p><b>Programming language:</b> Java, <a href="https://www.se-rwth.de/topics/Software-Architecture.php">MontiArc (for modelling)</a></p>
 									</div></details></div>
 									&nbsp;
 
@@ -233,7 +233,7 @@ In this project, we have aggregated the answers of different patent survey parti
 										<li><a href="#" class="button">Check it out</a></li>
 									</ul>-->
 								</article>
-								<article>
+								<!--<article>
 										<header>
 											<h2 id="ego">Hackathon by e.GO Digital (2019)</h2>
 										</header>
@@ -247,7 +247,7 @@ In this project, we have aggregated the answers of different patent survey parti
 										<ul class="actions special">
 											<li><a href="https://github.com/nqthong11/Banh-Mi" class="button">GitHub Repository</a></li>
 										</ul>
-								</article>
+								</article>-->
 							</section>
 				</div>
 		<!-- Footer -->
